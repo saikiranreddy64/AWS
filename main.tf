@@ -26,9 +26,6 @@ resource "aws_instance" "learn" {
 resource "aws_s3_bucket" "bucket" {
   bucket        = "sai-learning"
   force_destroy = true
-  versioning {
-    enabled = true
-  }
 
   tags = {
     Name        = "Sai bucket"
